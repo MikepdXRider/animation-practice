@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: ease-in-out;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+div {
+width: 150px;
+height: 150px;
+background-color: black;
+}
+
+.fly {
+    animation: fly 3s infinite;
+}
+
+@keyframes fly {
+    100%{
+        transform: translatey(-30px);
+    }
+    50%{
+        transform: translatey(0);
+    }
+   0%{
+       transform: translatey(-30px);
+   }
+}
