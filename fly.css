@@ -3,9 +3,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 90vh;
     animation: ease-in-out;
+    gap: 25px;
 }
 
 h1{
