@@ -1,0 +1,61 @@
+body{
+    animation: sunset 2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    transform: scale(0.30) translateY(-10000px);
+    z-index: 1;
+    position: absolute;
+    animation: moon-drop 2s linear forwards;
+    /* animation-delay: 0.33s; */
+}
+
+a{
+    z-index: 50;
+    position: absolute;
+}
+
+@keyframes sunset {
+    25%{
+       background-color: rgba(10, 10, 50, 0.5);
+    }
+    50%{
+       background-color: rgb(5, 5, 20);
+    }
+    75%{
+       background-color: rgba(10, 10, 50, 0.5);
+    }
+    100%{
+       background-color: white;
+    }
+}
+
+@keyframes moon-drop{
+    0%{
+       transform: translateY(-500px) scale(0.30);
+    }
+    10%{
+        transform: translateY(-190px) scale(0.30);
+    }
+    22%{
+        transform: translateY(-220px) scale(0.30);
+    }
+    35%{
+        transform: translateY(-195px) scale(0.30);
+    }
+    55%{
+        transform: translateY(-210px) scale(0.30);
+    }
+    90%{
+        transform: translateY(-200px) scale(0.30);
+    }
+    100%{
+        transform: translateY(-500px) scale(0.30);
+    }
+
+}
+
